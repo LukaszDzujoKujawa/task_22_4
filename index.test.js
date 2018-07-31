@@ -2,7 +2,7 @@ const assert = require('assert');
 const formatDate = require('./index');
 
 describe('formatDate', () => {
-    describe('seconds', () => {
+    describe('when it is called with paramater seconds', () => {
         it('should return seconds', () => {
             const actual = formatDate(23);
     
@@ -20,7 +20,7 @@ describe('formatDate', () => {
         });
     });
 
-    describe('minutes', () => {
+    describe('when it is called with paramater minutes', () => {
         it('should work for one digit minutes and seconds', () => {
             const actual = formatDate(65);
 
@@ -46,7 +46,7 @@ describe('formatDate', () => {
         });
     });
 
-    describe('hours', () => {
+    describe('when it is called with paramater hours', () => {
         it('should work for one digit hours, minutes and seconds', () => {
             const actual = formatDate(3723);
 
